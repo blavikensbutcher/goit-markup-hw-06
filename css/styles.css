@@ -402,7 +402,7 @@ header .container {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
+  padding: 40px;
   background-color: #fff;
   z-index: 999;
   display: flex;
@@ -423,7 +423,6 @@ header .container {
 }
 
 .mobile-menu {
-  padding-bottom: 40px;
   list-style: none;
   margin-bottom: auto;
 }
