@@ -366,12 +366,11 @@ header .container {
 }
 
 .menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
+  min-height: 24px;
+  min-width: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
-
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -379,6 +378,7 @@ header .container {
   border: none;
   border-radius: 50%;
   outline: none;
+  border-radius: 50%;
 }
 
 @media (min-width: 768px) {
@@ -392,6 +392,10 @@ header .container {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+.menu-container .menu-toggle {
+  border: 1px solid #E7E9FC;
+}
+
 .menu-container {
   position: fixed;
   top: 0;
@@ -399,9 +403,10 @@ header .container {
   width: 100vw;
   height: 100vh;
   padding: 32px;
-  background-color: #3f51b5;
+  background-color: #fff;
   z-index: 999;
-
+  display: flex;
+  flex-direction: column ;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
@@ -412,22 +417,20 @@ header .container {
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 24px;
+  right: 24px;
   color: #fff;
 }
 
 .mobile-menu {
-  padding: 0;
-  margin: 0;
+  padding-bottom: 40px;
   list-style: none;
+  margin-bottom: auto;
 }
 
 .mobile-menu .link {
   display: block;
   padding: 10px;
-  color: #fff;
-  text-decoration: none;
 }
 
 .burger-menu-icon {
@@ -438,6 +441,51 @@ header .container {
   .burger-container {
     display: none;
   }
+}
+
+
+.burger-link {
+color: var(--navyblue, #2E2F42);
+font-size: 36px;
+font-weight: 700;
+line-height: 1.11;
+letter-spacing: 0.02;
+}
+
+
+
+.burger-social {
+}
+.burger-social-item {
+  margin-bottom: 48px;
+}
+
+.burger-social-item:not(:last-child) {
+ margin-bottom: 40px;
+}
+
+.list {
+}
+.burger-social-tel {
+  color: var(--iris, #4D5AE5);
+font-size: 24px;
+font-weight: 700;
+line-height: 1.11;
+letter-spacing: 0.02em;
+}
+.link {
+}
+.burger-social-mail {
+  color: var(--slate, #434455);
+font-size: 20px;
+font-weight: 500;
+line-height: 1.2; /* 120% */
+letter-spacing: 0.05em;
+}
+
+.burger-menu-wrap .social-list {
+  justify-content: space-around;
+  gap: 4px;
 }
 
 /* ------------------- */
