@@ -168,6 +168,12 @@ header {
 
 .contacts .list {
   display: none;
+  font-style: normal;
+  color: #434455;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
 }
 
 @media screen and (min-width: 768px) {
@@ -179,7 +185,6 @@ header {
 
 @media screen and (min-width: 1158px) {
   .contacts .list {
-    font-style: normal;
     display: flex;
     gap: 40px;
     flex-direction: row;
@@ -340,8 +345,6 @@ header .container {
   list-style: none;
 }
 
-
-
 @media screen and (min-width: 768px) {
   .menu {
     gap: 40px;
@@ -393,7 +396,7 @@ header .container {
 }
 
 .menu-container .menu-toggle {
-  border: 1px solid #E7E9FC;
+  border: 1px solid #e7e9fc;
 }
 
 .menu-container {
@@ -406,7 +409,7 @@ header .container {
   background-color: #fff;
   z-index: 999;
   display: flex;
-  flex-direction: column ;
+  flex-direction: column;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
@@ -429,7 +432,7 @@ header .container {
 
 .mobile-menu .link {
   display: block;
-  padding: 10px;
+  padding-top: 40px;
 }
 
 .burger-menu-icon {
@@ -442,16 +445,13 @@ header .container {
   }
 }
 
-
 .burger-link {
-color: var(--navyblue, #2E2F42);
-font-size: 36px;
-font-weight: 700;
-line-height: 1.11;
-letter-spacing: 0.02;
+  color: var(--navyblue, #2e2f42);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02;
 }
-
-
 
 .burger-social {
 }
@@ -460,26 +460,26 @@ letter-spacing: 0.02;
 }
 
 .burger-social-item:not(:last-child) {
- margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .list {
 }
 .burger-social-tel {
-  color: var(--iris, #4D5AE5);
-font-size: 24px;
-font-weight: 700;
-line-height: 1.11;
-letter-spacing: 0.02em;
+  color: var(--iris, #4d5ae5);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
 }
 .link {
 }
 .burger-social-mail {
   color: var(--slate, #434455);
-font-size: 20px;
-font-weight: 500;
-line-height: 1.2; /* 120% */
-letter-spacing: 0.05em;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2; /* 120% */
+  letter-spacing: 0.05em;
 }
 
 .burger-menu-wrap .social-list {
@@ -522,6 +522,7 @@ letter-spacing: 0.05em;
 
 .hero-section {
   width: 100%;
+  max-width: 1440px;
   padding: 112px 54px;
   margin: 0 auto;
   padding: 188px 0;
@@ -531,20 +532,19 @@ letter-spacing: 0.05em;
   background-position: center;
   background-size: cover;
 
-
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url('../images/hero-image/hero-mobile@1x.jpg');
-  
 }
 
 @media only screen and (min-resolution: 192dpi) {
   .hero-section {
     background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)),
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
       url('../images/hero-image/hero-mobile@2x.jpg');
   }
 }
@@ -552,17 +552,19 @@ letter-spacing: 0.05em;
 @media only screen and (min-width: 768px) {
   .hero-section {
     background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)),
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
       url('../images/hero-image/hero-tablet@1x.jpg');
   }
 }
 
-@media only screen and (min-width: 768px) and (min-resolution: 192dpi){
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .hero-section {
     background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)),
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
       url('../images/hero-image/hero-tablet@2x.jpg');
   }
 }
@@ -570,8 +572,9 @@ letter-spacing: 0.05em;
 @media screen and (min-width: 1158px) {
   .hero-section {
     background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)),
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
       url('../images/hero-image/hero-desktop@1x.jpg');
   }
 }
@@ -579,12 +582,12 @@ letter-spacing: 0.05em;
 @media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
   .hero-section {
     background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)),
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
       url('../images/hero-image/hero-desktop@2x.jpg');
   }
 }
-
 
 .hero-section-button {
   display: block;
@@ -1470,7 +1473,8 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 408px;
+  max-width: 408px;
+  width: (100% - 36px);
   min-height: 584px;
   background-color: #fcfcfc;
   border-radius: 4px;
