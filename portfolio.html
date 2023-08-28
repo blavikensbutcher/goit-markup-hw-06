@@ -48,13 +48,38 @@
           </ul>
         </address>
       </div>
+
+      <div class="burger-container">
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="burger-menu-icon"
+            width="32"
+            height="22"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <use href="./images/icons.svg#menu-burger"></use>
+          </svg>
+        </button>
+
+        <ul class="menu">
+          <li class="burger-menu-item">
+            <a class="burger-link link" href="/index.html">Studio</a></li>
+          <li class="burger-menu-item">
+            <a class="burger-link link" href="/portfolio.html">Portfolio</a></li>
+          <li class="burger-menu-item">
+            <a class="burger-link link" href="#" >Contacts</a></li>
+        </ul>
+      </div>
     </header>
 
     <main>
 
 
       <!-- PORTFOLIO SECTION  -->
-      <section class="portfolio-section">
+      <section class="portfolio-section section">
 
 
           <!-- FIRST CONTAINER  -->
@@ -90,7 +115,9 @@
 
         <ul class="portfolio-content list">
           <li class="frame">
-            <a href="" class="portfolio-content-link link"><div class="frame-wrapper"><img src="./images/portfolio/bank-interface-concept.jpg"
+            <a href="" class="portfolio-content-link link">
+              <div class="frame-wrapper">
+              <img src="./images/portfolio/bank-interface-concept.jpg"
                 width="360" height="300" alt="Bank Interface Concept"/>
                 
               <p class="frame-wrapper-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
@@ -227,7 +254,7 @@
 
     <!-- FOOTER  -->
     
-    <footer class="footer">
+    <footer class="footer section">
       <div class="footer-container container">
         <div class="footer-logo-container">
             <a class="link" href="./index.html"
@@ -280,5 +307,68 @@
             </div>
       </div>
     </footer>
+    
+    <script src="./js/modal.js"></script>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="modal-window-close-button-image" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="burger-menu-item">
+          <a class="burger-link link" href="index.html">Studio</a></li>
+        <li class="burger-menu-item">
+          <a class="burger-link link" href="portfolio.html">Portfolio</a></li>
+        <li class="burger-menu-item">
+          <a class="burger-link link" href="#">Contacts</a></li>
+      </ul>
+
+      <div class="burger-menu-wrap">
+        <ul class="burger-social">
+          <li class="burger-social-item list">
+            <a class="burger-social-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+          <li class="burger-social-item list">
+            <a class="burger-social-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        </ul>
+
+       <ul class="social-list">
+                  <li class="social-list-item list">
+                    <a class="social-list-link" href="">
+                    <svg class="social-list-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg></a>
+                  </li>
+                  <li class="social-list-item list">
+                    <a class="social-list-link" href="">
+                    <svg class="social-list-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg></a></li>
+                  <li class="social-list-item list">
+                    <a class="social-list-link" href="">
+                    <svg class="social-list-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg></a></li>
+                  <li class="social-list-item list">
+                    <a class="social-list-link" href="">
+                    <svg class="social-list-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg></a></li>
+                </ul>
+        
+      </div>
+
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+
+    
   </body>
 </html>
