@@ -1,2 +1,2 @@
-# goit-markup-hw-03
-GoIT Homework 3
+GoIT Homework №6 
+Adaptive design
