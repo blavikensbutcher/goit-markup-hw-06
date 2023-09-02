@@ -307,7 +307,6 @@ header .container {
   content: '';
   position: absolute;
   left: 0;
-  bottom: -1px;
   background-color: #404bbf;
   border-radius: 2px;
   width: 100%;
@@ -320,11 +319,12 @@ header .container {
   }
 }
 
+
+
 .menu-portfolio.active::after {
   content: '';
   position: absolute;
   left: 0;
-  bottom: -1px;
   background-color: #404bbf;
   border-radius: 2px;
   width: 100%;
