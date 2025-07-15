@@ -421,15 +421,15 @@ header .container {
 }
 
 .menu-container {
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 40px;
+  padding: 40px 16px;
   background-color: #fff;
   z-index: 999;
-  display: flex;
   flex-direction: column;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
@@ -494,8 +494,8 @@ header .container {
 
 .burger-social-tel {
   color: var(--iris, #4d5ae5);
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 500;
   line-height: 1.11;
   letter-spacing: 0.02em;
 }
@@ -513,7 +513,7 @@ header .container {
 }
 
 .burger-menu-wrap .social-list {
-  justify-content: space-around;
+  justify-content: space-between;
 
   gap: 4px;
 }
@@ -553,7 +553,7 @@ header .container {
 
 .hero-section {
   width: 100%;
-  max-width: 1440px;
+  min-width: 216px;
   margin: 0 auto;
   padding: 72px 52px;
   margin-left: auto;
@@ -582,6 +582,7 @@ header .container {
 @media only screen and (min-width: 768px) {
   .hero-section {
     padding: 112px 136px;
+    max-width: 768px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -603,6 +604,7 @@ header .container {
 @media screen and (min-width: 1158px) {
   .hero-section {
     padding: 188px 472px;
+    max-width: 1440px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -1669,5 +1671,4 @@ footer {
   opacity: 1;
   pointer-events: all;
   visibility: visible;
-  display: block;
 }
