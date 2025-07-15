@@ -34,30 +34,59 @@
               <a class="studio-link link active" href="./index.html">Studio</a>
             </li>
             <li class="navigation-menu-item">
-              <a class="portfolio-link link" href="./portfolio.html"
-                >Portfolio</a
-              >
+              <a class="portfolio-link link" href="#">Portfolio</a>
             </li>
             <li class="navigation-menu-item">
-              <a class="contacts-link link" href="">Contacts</a>
+              <a class="contacts-link link" href="#">Contacts</a>
             </li>
           </ul>
         </nav>
 
         <address class="contacts">
-          <ul class="contacts list">
-            <li class="contacts item">
+          <ul class="list">
+            <li class="contacts-item">
               <a class="email link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="contacts item">
+            <li class="contacts-item">
               <a class="email link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
+      </div>
+
+      <!-- burger menu -->
+
+      <div class="burger-container">
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            class="burger-menu-icon"
+            width="32"
+            height="22"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <use href="./images/icons.svg#menu-burger"></use>
+          </svg>
+        </button>
+
+        <ul class="menu">
+          <li class="burger-menu-item">
+            <a class="burger-link link" href="/index.html">Studio</a>
+          </li>
+          <li class="burger-menu-item">
+            <a class="burger-link link" href="/portfolio.html">Portfolio</a>
+          </li>
+          <li class="burger-menu-item">
+            <a class="burger-link link" href="#">Contacts</a>
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -66,7 +95,7 @@
 
       <section class="hero-section">
         <div class="container hero-container">
-          <h1 class="first-header">Effective Solutions for Your Business</h1>
+          <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="order-service-button" type="button" data-modal-open>
             Order Service
           </button>
@@ -74,13 +103,13 @@
       </section>
 
       <!-- SECOND SECTION  -->
-      <section class="section second-section">
+      <section class="section feature-section">
         <div class="container">
           <!-- THERES NO HEADER BUT VALIDATOR ASKS FOR IT THERES NO HEADER BUT VALIDATOR ASKS FOR IT THERES NO HEADER BUT VALIDATOR ASKS FOR IT -->
           <h2 class="visually-hidden">Features</h2>
           <!-- THERES NO HEADER BUT VALIDATOR ASKS FOR IT THERES NO HEADER BUT VALIDATOR ASKS FOR IT THERES NO HEADER BUT VALIDATOR ASKS FOR IT -->
-          <ul class="list second-section">
-            <li class="second-section list-item">
+          <ul class="feature-list list">
+            <li class="feature-list-item">
               <div class="feature-list-item-container">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna"></use>
@@ -92,7 +121,7 @@
                 the perfect and creative solution.
               </p>
             </li>
-            <li class="second-section list-item">
+            <li class="feature-list-item">
               <div class="feature-list-item-container">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#icon-clock"></use>
@@ -104,7 +133,7 @@
                 within the shortest possible time.
               </p>
             </li>
-            <li class="second-section list-item">
+            <li class="feature-list-item">
               <div class="feature-list-item-container">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram"></use>
@@ -116,7 +145,7 @@
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li class="second-section list-item">
+            <li class="feature-list-item">
               <div class="feature-list-item-container">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#icon-astronaut"></use>
@@ -135,7 +164,7 @@
       <!-- SECTION THREE  -->
       <section class="section third-section">
         <div class="container third-container">
-          <h2 class="second-header">Our Team</h2>
+          <h2 class="third-section-header">Our Team</h2>
           <ul class="list third-section">
             <li class="underlist">
               <img
@@ -303,8 +332,8 @@
       <!-- SECTION FOUR  -->
       <section class="section four-section">
         <div class="container four-container">
-          <h2 class="section-title">Our Portfolio</h2>
-          <ul class="list four-section">
+          <h2 class="third-section-header">Our Portfolio</h2>
+          <ul class="portfolio-content list">
             <li class="frame">
               <div class="frame-wrapper">
                 <img
@@ -593,5 +622,74 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="modal-window-close-button-image" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="burger-menu-item">
+          <a class="burger-link link" href="index.html">Studio</a>
+        </li>
+        <li class="burger-menu-item">
+          <a class="burger-link link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="burger-menu-item">
+          <a class="burger-link link" href="#">Contacts</a>
+        </li>
+      </ul>
+
+      <div class="burger-menu-wrap">
+        <ul class="burger-social">
+          <li class="burger-social-item list">
+            <a class="burger-social-tel link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="burger-social-item list">
+            <a class="burger-social-mail link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="social-list">
+          <li class="social-list-item list">
+            <a class="social-list-link" href="#">
+              <svg class="social-list-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use></svg
+            ></a>
+          </li>
+          <li class="social-list-item list">
+            <a class="social-list-link" href="#">
+              <svg class="social-list-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use></svg
+            ></a>
+          </li>
+          <li class="social-list-item list">
+            <a class="social-list-link" href="#">
+              <svg class="social-list-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use></svg
+            ></a>
+          </li>
+          <li class="social-list-item list">
+            <a class="social-list-link" href="#">
+              <svg class="social-list-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use></svg
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
